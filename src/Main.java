@@ -50,10 +50,14 @@ public class Main {
         } else if (grade >= 60.00) {
             //This outputs the letter grade "D" if the above statement is true.
             System.out.println("Your letter grade is a 'D'.");
+            //This defines the grade "F" as anywhere from 0.00 to 60.00.
+        } else if (grade >= 0.00) {
+            //This outputs the letter grade "F" if the above statement is true.
+            System.out.println("Your letter grade is an 'F'.");
             //This sets the automatic response if all other "if" tests fail.
         } else {
-            //This outputs the letter grade "F" if all other "if" tests fail.
-            System.out.println("Your letter grade is an 'F'.");
+            //This gives the user an error message if all other "if" tests fail.
+            System.out.println("Error: Entered grade is below 0%.");
         }
     }
     }
